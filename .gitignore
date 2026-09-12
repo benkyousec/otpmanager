@@ -1,0 +1,70 @@
+# --- Gradle ---------------------------------------------------------------
+build/
+.gradle/
+.kotlin/
+
+# --- Java -----------------------------------------------------------------
+*.class
+*.jar
+*.war
+*.ear
+
+# The Gradle wrapper JAR must stay checked in (it is not a build artifact).
+!gradle/wrapper/gradle-wrapper.jar
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# --- Test / coverage output ----------------------------------------------
+out/
+bin/
+test-output/
+*.exec
+*.ec
+
+# --- IDEs -----------------------------------------------------------------
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+
+# --- OS -------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Logs -----------------------------------------------------------------
+*.log
+logs/
+
+# --- Burp Suite -----------------------------------------------------------
+# Burp project files contain this extension's stored extension data, which
+# includes the TOTP secrets in plaintext. Never commit them.
+*.burp
+*.burp.bak
+*.burp.tmp
+
+# --- Exported 2FA accounts (SECRETS - never commit) -----------------------
+# Files produced by the extension's Export feature. Encrypted or not, these
+# hold shared secrets and must not end up in version control.
+*.2fa.json
+2fa-accounts-*.txt
+2fa-accounts-*.json
+2fa-accounts-*.2fa.json
